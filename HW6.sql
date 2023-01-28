@@ -7,7 +7,7 @@ WHERE title LIKE 'C%';
 
 -- the longest length of the film with rental rate equal to 0.99
 SELECT MAX(length) FROM film
-WHERE rental_rate=0.99
+WHERE rental_rate=0.99;
 
 -- count of the distinct values of replacement_cost of the films which are longer than 150 minutes
 SELECT COUNT (DISTINCT replacement_cost) FROM film
