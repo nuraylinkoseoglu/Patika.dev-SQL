@@ -23,8 +23,8 @@ SELECT first_name FROM customer;
 SELECT first_name FROM actor
 INTERSECT ALL
 SELECT first_name FROM customer;
--- list the intersection for first name columns in both the actor and customer columns including repeating data
+-- For the first_name columns in the actor and customer tables, list the data in the first table but not in the second table
 SELECT first_name FROM actor
-INTERSECT ALL
+EXCEPT ALL
 SELECT first_name FROM customer;
 
