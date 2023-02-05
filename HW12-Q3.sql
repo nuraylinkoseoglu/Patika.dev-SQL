@@ -1,0 +1,7 @@
+-- list films from film table where rental_rate and replacement_cost is the lowest.
+SELECT *
+FROM film
+WHERE rental_rate=
+(SELECT MIN(rental_rate) FROM film)
+AND replacement_cost=
+(SELECT MIN(replacement_cost) FROM film)
